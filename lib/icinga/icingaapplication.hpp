@@ -52,7 +52,13 @@ public:
 
 	String GetNodeName() const;
 
-	void ValidateVars(const Dictionary::Ptr& value, const ValidationUtils& utils) override;
+	virtual void ValidateVars(const Dictionary::Ptr& value, const ValidationUtils& utils) override;
+
+	static void DeclarePluginDir(const String& pluginDir);
+	static String GetPluginDir(void);
+
+	static void DeclarePluginPath(const String& pluginPath);
+	static Value GetPluginPath(void);
 
 private:
 	void DumpProgramState();
