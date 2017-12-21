@@ -8,7 +8,7 @@
  * project or other sources.
  */
 /*
-const PluginPath = "@ICINGA2_PLUGINPATH@".split(":")
+const PluginPath = @ICINGA2_PLUGINPATH_ESCAPED@
 */
 
 /*
